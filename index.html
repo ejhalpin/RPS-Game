@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+    <!-- The cdn script tag for firebase database -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
+    <!-- The cdn script tag for user authentication  -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- local stylesheet -->
+    <link rel="stylesheet" href="assets/css/sytle.css" />
+    <title>Auth Test</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="index">
+        <header>
+          <img id="index-logo" src="assets/images/bad-sheep.png" alt="bad-sheep-logo" />
+          <h1 id="logo-title">Bad Sheep Games</h1>
+          <a href="#" id="auth-link">sign in / sign up</a>
+        </header>
+        <div id="content">
+          <section id="main">
+            <!-- move to toolbelt after construction -->
+            <button id="play">play</button>
+            <!-- end -->
+          </section>
+          <section id="user-info">
+            <h2><span id="user-name"></span></h2>
+            <h2>rank: <span id="user-rank"></span></h2>
+            <div id="stats">
+              <p>wins: <span id="user-wins"></span></p>
+              <p>losses: <span id="user-losses"></span></p>
+              <p>games played: <span id="user-games-played"></span></p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div id="tool-belt">
+      <div id="wait-message">Waiting for an opponent</div>
+      <!-- move back to container after game area construction -->
+
+      <div id="game-zone">
+        <header>Rock Paper Scissors</header>
+        <div id="player">
+          <h3 id="player-name">Your Name</h3>
+          <div id="player-choice"></div>
+        </div>
+        <div id="opponent">
+          <h3 id="opponent-name">Your Opponent</h3>
+          <div id="opponent-choice"></div>
+        </div>
+        <div id="rps-options">
+          <div class="rps-icon">
+            <img id="rock" class="choice" src="assets/images/rock.png" alt="rock" />
+          </div>
+          <div class="rps-icon">
+            <img id="paper" class="choice" src="assets/images/paper.png" alt="paper" />
+          </div>
+          <div class="rps-icon">
+            <img id="scissors" class="choice" src="assets/images/scissors.png" alt="scissors" />
+          </div>
+        </div>
+      </div>
+      <!-- end -->
+      <input id="name" type="text" />
+      <div id="sign-up-in">
+        <img id="bad-sheep-logo" src="assets/images/bad-sheep.png" alt="bad sheep logo" />
+        <h1 id="title">sign in</h1>
+        <form id="auth-form">
+          <label for="email">email</label>
+          <input type="email" id="email" />
+          <label for="password">password</label>
+          <input type="password" id="password" />
+          <div id="button-box">
+            <button id="toggle-login" type="button">sign up</button>
+            <input type="submit" id="submit" value="sign in" />
+          </div>
+          <a href="#" id="anonymous-login">continue as guest</a>
+        </form>
+      </div>
+    </div>
+
+    <footer>logo credit: <a href="https://dribbble.com/tvar" target="_blank">Alexander Fedorenko</a></footer>
+    <script src="assets/javascript/auth.js"></script>
+    <script src="assets/javascript/logic.js"></script>
+  </body>
+</html>

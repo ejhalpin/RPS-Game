@@ -1,0 +1,218 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#container {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#sign-up-in {
+  border: 1px solid midnightblue;
+  padding: 25px 25px 5px 25px;
+  border-radius: 10px;
+  color: #0a0025;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#auth-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  align-self: flex-start;
+  padding: 5px 0;
+}
+
+input[type="submit"] {
+  margin-top: 5px;
+  border: 1px solid midnightblue;
+  background-color: midnightblue;
+  color: white;
+  border-radius: 5px;
+  padding: 7px 15px;
+}
+
+button {
+  border: 1px solid midnightblue;
+  margin-top: 5px;
+  border-radius: 5px;
+  padding: 7px 15px;
+  background-color: white;
+  color: midnightblue;
+}
+button:hover {
+  background-color: midnightblue;
+  color: white;
+  opacity: 0.75;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.75;
+}
+
+#button-box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#anonymous-login {
+  text-decoration: none;
+  color: midnightblue;
+  margin-top: 15px;
+}
+
+#anonymous-login:hover {
+  opacity: 0.75;
+}
+
+#tool-belt {
+  display: none;
+}
+
+/* for main content -- all above for user auth and body */
+
+#index {
+  width: 100%;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+header {
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid midnightblue;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-image: linear-gradient(white, whitesmoke);
+}
+
+#index-logo {
+  width: 71px;
+  height: 75px;
+  position: absolute;
+  left: 10px;
+}
+
+#auth-link {
+  text-decoration: none;
+  color: midnightblue;
+  position: absolute;
+  right: 10px;
+}
+
+#auth-link:hover {
+  opacity: 0.75;
+}
+
+#content {
+  background-color: midnightblue;
+  width: 90vw;
+  max-width: 960px;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#user-info {
+  width: 100%;
+  background-color: whitesmoke;
+  border: 1px solid midnightblue;
+  border-radius: 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: midnightblue;
+  color: white;
+  padding: 10px;
+  border: 1px solid white;
+  box-sizing: border-box;
+  border-radius: 0 0 15px 15px;
+}
+
+#play {
+  font-size: 40px;
+  border-radius: 15px;
+  line-height: 40px;
+}
+
+#play:hover {
+  border: 1px solid white;
+}
+
+h2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#game-zone {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#player,
+#opponent {
+  width: 300px;
+  height: 300px;
+  background-color: whitesmoke;
+  border-radius: 15px;
+  text-align: center;
+  margin: 10px;
+}
+#rps-options {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.rps-icon {
+  margin: 10px;
+  width: 125px;
+}
+#rock,
+#paper,
+#scissors {
+  width: 100%;
+  height: auto;
+}
